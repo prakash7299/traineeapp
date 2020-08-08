@@ -1,7 +1,7 @@
 package traineepack;
 
 public class ECETrainee extends Trainee {
-	String deviceUsed;
+	private String deviceUsed;
 	public ECETrainee(int id,String name,String deviceUsed) {
 		super(id,name);
 		this.deviceUsed=deviceUsed;
