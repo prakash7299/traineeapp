@@ -3,17 +3,16 @@ package traineepack;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class TraineeMain {
 	Map<Integer, Trainee> map = new HashMap<>();
 	Set<CSTrainee> set1 = new HashSet<>();
 	Set<ECETrainee> set2 = new HashSet<>();
-
-	public static void main(String[] args) {
-		TraineeMain obj1 = new TraineeMain();
-		obj1.runapp();
-	}
+ public static void main(String args[]) {
+	 TraineeMain obj=new TraineeMain();
+	 obj.runapp();
+ }
 
 	public void runapp() {
 		CSTrainee trainee1 = new CSTrainee(100, "prakash", 4);
@@ -42,12 +41,12 @@ public class TraineeMain {
 		System.out.println("*****CS Trainee*******");
 		for (CSTrainee trainee : set1) {
 			System.out.println(
-					"id : " + trainee.getId() + "name :" + trainee.getName() + "Languages" + trainee.getLanguages());
+					"id : " + trainee.getId() + "name :" + trainee.getName() + "Languages :" + trainee.getLanguages());
 		}
 		System.out.println("******ECE Trainee*****");
 		for (ECETrainee trainee : set2) {
 			System.out.println(
-					"id : " + trainee.getId() + "name :" + trainee.getName() + "Languages" + trainee.getDeviceUsed());
+					"id : " + trainee.getId() + "name :" + trainee.getName() + "Device used :" + trainee.getDeviceUsed());
 		}
 
 	}
