@@ -40,13 +40,11 @@ public class TraineeMain {
 	private void display() {
 		System.out.println("*****CS Trainee*******");
 		for (CSTrainee trainee : set1) {
-			System.out.println(
-					"id : " + trainee.getId() + "name :" + trainee.getName() + "Languages :" + trainee.getLanguages());
+			System.out.println("id : " + trainee.getId() + "name :" + trainee.getName() + "Languages :" + trainee.getLanguages());
 		}
 		System.out.println("******ECE Trainee*****");
 		for (ECETrainee trainee : set2) {
-			System.out.println(
-					"id : " + trainee.getId() + "name :" + trainee.getName() + "Device used :" + trainee.getDeviceUsed());
+			System.out.println("id : " + trainee.getId() + "name :" + trainee.getName() + "Device used :" + trainee.getDeviceUsed());
 		}
 
 	}
