@@ -20,6 +20,7 @@ public class Trainee {
 	public void setName(String name) {
 		this.name = name;
 	}
+	@Override
 	public int hashCode() {
 		return id;
 	}
