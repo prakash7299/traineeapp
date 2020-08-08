@@ -1,7 +1,7 @@
 package traineepack;
 
 public class CSTrainee extends Trainee {
-	int languages;
+	private int languages;
 	public CSTrainee(int id,String name,int languages) {
 		super(id,name);
 		this.languages=languages;
